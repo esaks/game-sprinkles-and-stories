@@ -79,15 +79,16 @@ dialogues ={
             }
         },
         "1":{
-            "text": {},
+            "text": ["Hi, again! I could really use something sweet. ",
+                     "My mom's taking me to go dress shopping this weekend ",
+                     "for the school dance. There are some styles I have in mind, ",
+                     "but I'm stuck between, like, four options. ",
+                     "I'm nervous because it's the first dance I've been to. "],
             "trait_prompt": {},
             "trait_responses": {},
-            "prompt": ["Hi, again! I could really use something sweet. ",
-                     "My mom's taking me to go dress shopping this weekend for the school ",
-                     "dance. There are some styles I have in mind, but I'm stuck between like ",
-                     "four options. I'm nervous because it's the first dance I've been to. ",
-                     "Maybe there's nothing to be nervous about...Sorry, am I talking too much? ",
-                     "You probably just want to take my order."],
+            "prompt": ["Maybe there's nothing to be nervous about...",
+                       "Sorry, am I talking too much? ",
+                       "You probably just want to take my order."],
             "responses": {
                 "1": ["Not at all. That sounds exciting and being nervous is pretty normal. "],
                 "2": ["Don't worry about it."],
@@ -101,20 +102,20 @@ dialogues ={
         },
         "2": {
             "text": ["Hi! I'm excited for another of your cupcakes. ",
-                     "At school today, I saw someone give a really elaborate proposal ",
-                     "inviting their date to the dance. It made me think... ",
-                     "I mean it would be scary to have everyone looking at you like that, ",
-                     "but at the same time, I think it's sweet."],
+                     "At school today, I saw someone give a really elaborate ",
+                     "proposal, inviting their date to the dance. It made me think... ",
+                     "I mean it would be scary to have everyone looking at you ",
+                     "like that, but at the same time, I think it's sweet."],
             "trait_prompt": ["Hm, so far, I get the sense that Zoe is..."],
             "trait_responses": {
-                "1": "extroverted",
-                "2": "awkward",
-                "3": "closed"
+                "1": ["extroverted"],
+                "2": ["awkward"],
+                "3": ["closed"]
             },
             "prompt": ["Do you think it's weird that I'm going to the dance alone?"],
             "responses": {
-                "1": ["I don't think that's weird. Lots of people aren't in relationships ",
-                      "and you can still have a good time at the dance."],
+                "1": ["I don't think that's weird. Lots of people aren't in relationships, ",
+                      "and you can still have a good time at the dance by yourself."],
                 "2": ["Not really."],
                 "3": ["It's a little weird."]
             },
@@ -125,50 +126,64 @@ dialogues ={
             }
         },
         "3": {
-            "text": ["I'm back! You know, the dance is next week. I know I'll still have fun ",
-                     "going alone and everything...but I'm realizing how everyone will have ",
-                     "their couple photos before and there will be those slow dances where ",
-                     "everyone watches from the sidelines or they try to mimic it with their friends ",
-                     "even though it doesn't really feel the same. Maybe it's not even about the dance. ",
-                     "Maybe it's just that I wonder if that kind of connection will ever happen for me."],
+            "text": ["I'm back! You know, the dance is next week. ",
+                     "I know I'll still have fun going alone and everything... ",
+                     "but I'm realizing how everyone will have their couple photos ",
+                     "beforehand, and there will be those slow dances where ",
+                     "everyone  watches from the sidelines or they try to mimic it ",
+                     "with their friends, even though it doesn't really feel the ",
+                     "same. Maybe it's hasn't just been the dance that I've been ",
+                     "worried about...",
+                     "Maybe it's just that I wonder if that kind of connection will ",
+                     "ever happen for me."],
             "trait_prompt": ["Hm, so far, I get the sense that Zoe is..."],
             "trait_responses": {
                 "1": ["neurotic"],
                 "2": ["curious"],
                 "3": ["cool"]
             },
-            "prompt": ["I lot of people in my grade are in relationships. It makes me think I'm... ",
-                       "behind, or something."],
+            "prompt": ["I lot of people in my grade are in relationships. ",
+                       "It makes me think I'm... behind, or something."],
             "responses": {
-                "1": ["I understand that. But things happen for different people at different times. ",
-                      "The number of relationships you have now doesn't say anything about the kinds ",
-                      "of relationships you'll have in the future. And I think someone like you who seems "
-                      "to really care about forming those connections actually has a good chance of meeting "
+                "1": ["I understand that. But things happen for different people at ",
+                      "different times. The number of relationships you have now doesn't ",
+                      "say anything about the kinds of relationships you'll have in the ",
+                      "future. And I think someone like you who seems to really care about ",
+                      "forming those connections actually has a good chance of meeting ",
                       "someone who wants that with you, too."],
                 "2": ["It'll happen. You've got years ahead of you."],
-                "3": ["It'll happen or it won't. Relationships aren't all they're cracked up to be anyway."]
+                "3": ["It'll happen or it won't. Relationships aren't all they're cracked up ",
+                      "to be anyway."]
             },
             "reactions" : {
-                "reaction1": ["Thanks, that means a lot! And you're right. Things happen at different times. ",
-                              "Besides, I don't want to rush to get into a relationship with someone ",
-                              "I don't actually like just because it will make me feel more like everyone "
-                              "else."],
+                "reaction1": ["Thanks, that means a lot! And you're right. ",
+                              "Things happen at different times. ",
+                              "Besides, I don't want to rush to get into a relationship with  ",
+                              "someone I don't actually like just because it will make me  ",
+                              "feel more like everyone else."],
                 "reaction2": ["Yeah, I guess there's still time..."],
                 "reaction3": ["Maybe..."]
             },
         },        
         "4": {
-            "text": ["Hi! I just wanted to let you know how the dance went. To be honest, ",
-                     "There were awkward moments and moments I wished I was there with someone. ",
-                     "But, it was still fun to get dressed up in the dress I picked out with my ",
-                     "mom. My friends and I took pictures together and they played good songs. ",
-                     "I'm glad I went. If I had listened to my insecurities, maybe I wouldn't ",
-                     "have. So, thanks for encouraging me."],
+            "text": ["Hi! I just wanted to let you know how the dance went. ",
+                     "To be honest, there were awkward moments and moments ",
+                     "I wished I was there with someone. ",
+                     "But, it was still fun to get dressed up in the dress ",
+                     "I picked out with my mom. My friends and I took pictures ",
+                     "together and they played good songs. ",
+                     "I'm glad I went. ",
+                     "If I had listened to my insecurities, maybe I wouldn't ",
+                     "have."],
             "trait_prompt": {},
             "trait_responses": {},
-            "prompt": {},
-            "responses": {},
-            "reactions": ["I think this calls for a celebratory cupcake!"]
+            "prompt": ["So, thanks for encouraging me!"],
+            "responses": {
+                "1": ["No problem!"]
+                },
+            "reactions": {
+                "reaction1": ["I think this calls for a celebratory cupcake!"]
+                }
         }
     }
 }

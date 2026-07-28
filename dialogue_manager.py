@@ -3,13 +3,12 @@ import random
 import pygame
 from dialogue_data import dialogues
 
-# set max story stage
-max_story_stage = 4
-
+responses_font = pygame.font.SysFont('applegothic', 14) 
+line_height=responses_font.get_height()
 
 # Determine whether to advance story stage
 # in the game loop, call this and if true increase customer.story_stage += 1
-def should_advance_story_stage(customer):
+def can_trigger_progression(customer):
     friendship_points = customer.friendship
     if customer.story_stage == 0:
         return True
@@ -20,15 +19,17 @@ def should_advance_story_stage(customer):
     elif customer.story_stage  == 3 and friendship_points >= 20:
         return True
     elif customer.story_stage  == 4 and friendship_points >= 28:
-        return False
+        return True
     else:
         return False
 
 # Determine visit type
+# set max story stage
+max_story_stage = 4
 def choose_visit_type(customer):
-    if customer.story_stage < max_story_stage:
+    if customer.story_stage <= max_story_stage:
         chance_of_progression = 0.75
-    elif customer.story_stage == max_story_stage:
+    elif customer.story_stage > max_story_stage:
         chance_of_progression = 0
     visit_type = random.choices(
         ["regular", "progression"],
@@ -99,10 +100,14 @@ class DialogueManager:
 
     def load_phase(self):
         phase_data = self.current_stage_node[self.current_phase]
+       
 
         if self.current_phase == "text":
             self.current_lines = phase_data
             self.showing_choices = False
+            if not isinstance(phase_data, list):
+                raise TypeError(f"Expected list for text phase, got {type(phase_data)}")
+            
 
         elif self.current_phase in ["trait_prompt", "prompt"]:
             self.current_lines = phase_data
@@ -137,12 +142,14 @@ class DialogueManager:
             responses = self.current_stage_node["responses"]
         else:
             return
-    
+
         y=250
         for key, text in responses.items(): #return tuples of diciontary keys and values
-            rect = pygame.Rect(220, y, 450, 30)
+            height = len(text) * line_height + 5
+            rect = pygame.Rect(220, y, 450, height)
             self.response_rects.append((rect, key, text))
-            y+=20
+            y += height 
+            print(key, len(text), height)
         return self.response_rects
         
 
@@ -166,4 +173,5 @@ class DialogueManager:
     def get_current_page(self):
         start = self.page_index
         end = start + 4
+        #print(self.current_lines)
         return self.current_lines[start:end]
