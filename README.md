@@ -1,12 +1,26 @@
 # Sprinkles and Stories
 A cozy narrative-driven 2D bakery game made in pygame
 
+## Current Game State
+Still in development. I'm working on adding NPC characters, writing dialogue, the trait discovery system and endings.
+
+## Screenshots/gifs
+
 ## Features
 - Cupcake making mechanics (retrieve cupcake, add frosting, add sprinkles, deliver to customer)
 - Customer spawning of NPC characters with dynamic weighting based on player choices
 - Interactive dialogue system with relationship progression and story arcs for the NPC characters
 - Ability to discover customers' hidden personality traits through interaction
-- Custom endings based on player performance in successfully completing orders and building relationships with NPCs 
+- Custom endings based on player performance in successfully completing orders and building relationships with NPCs
+
+## Controls
+Point and click
+
+## Setup 
+
+## Possible future refinements
+
+## Development
 
 ## Credits  
 **Images**   
@@ -24,3 +38,5 @@ A cozy narrative-driven 2D bakery game made in pygame
 - Successful order: Purchase success from Free Sound Game Studio https://pixabay.com/sound-effects/film-special-effects-purchase-success-384963/
 - Background music: Sun Through Open Windows by Ruby Zephyr https://pixabay.com/music/beats-sun-through-open-windows-v1-450763/
 - Trait discovery: Sound achivement pop sound by Vadim_Makes_Sound https://pixabay.com/sound-effects/film-special-effects-achievement-badge-pop-sound-1-547860/
+
+## License
